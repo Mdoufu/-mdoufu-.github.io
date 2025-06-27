@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポートフォリオ｜まぼ/泉屋まぼ</title>
-    <!-- Tailwind CSSを読み込み -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (Inter) を読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -19,61 +17,85 @@
 </head>
 <body class="bg-slate-100 text-slate-800">
 
-    <!-- メインコンテンツ -->
     <main class="container mx-auto px-6 py-12">
 
-        <!-- 自己紹介・ヒーローセクション -->
-        <section id="about" class="text-center py-16 md:py-24">
-            <!-- 
-                ご自身のプロフィール写真を表示するには、以下の手順で設定してください。
-                1. Imgur ( https://imgur.com/upload ) などの画像共有サイトに画像をアップロードします。
-                2. アップロード後、画像の上で右クリックして「画像アドレスをコピー」を選択します。
-                3. 下の <img src="..."> の "..." の部分に、コピーした画像アドレスを貼り付けます。
-            -->
-            <img src="https://placehold.co/150x150/f1f5f9/99a9d4?text=Profile" 
-                 alt="プロフィール写真" 
-                 class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-[#99a9d4] shadow-lg object-cover">
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
-                まぼ/泉屋まぼ
-            </h2>
-            <p class="mt-1 text-lg text-slate-600">Mabo/Mabo Izumiya</p>
-            <p class="mt-4 text-lg md:text-xl text-slate-600">
-                バーチャルとリアルを行き来する越境型クリエイター
-            </p>
-            <div class="max-w-3xl mx-auto mt-8">
-                <p class="text-center text-slate-700 leading-relaxed">
-                    2023年4月よりニコニコを拠点に活動開始。<br>
-                    2024年から泉屋まぼ名義でVRChat・cluster・バーチャルキャスト等のメタバースにも活動範囲を拡大。<br>
-                    現在は歌ってみたの投稿・生配信・SmileSやCLUSTARSの関連企画など参加しながら<br>
-                    バーチャルとリアルの両方面で活動中。
-                </p>
-            </div>
-        </section>
-        
-        <!-- 活動実績セクション (Works) -->
-        <section id="works" class="py-16 md:py-20">
-            <div class="max-w-4xl mx-auto">
-                <h3 class="text-3xl font-bold text-slate-900 mb-4 text-left">活動実績</h3>
-                <div class="w-24 h-1 bg-[#99a9d4] mb-12"></div>
-                
-                <div class="space-y-6 text-left">
-                    <a href="https://x.com/6pongimetaRADIO/status/1900502175807091096" class="block bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                        <h4 class="text-xl font-semibold text-slate-800">JR西日本×テレビ朝日×cluster「バーチャル広島駅開幕祭」応援団</h4>
-                        <p class="text-slate-600 mt-1">　</p>
-                    </a>
-                    <a href="#" class="block bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                        <h4 class="text-xl font-semibold text-slate-800">テレビ朝日×cluster「メタメタ大作戦2025」盛り上げ隊</h4>
-                        <p class="text-slate-600 mt-1">　</p>
-                    </a>
-                    <a href="https://x.com/Mdoufu_VRC/status/1920317598836592735" class="block bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-                        <h4 class="text-xl font-semibold text-slate-800">みみのこ非公式大会「みみのこぷらす杯主催」＠VRChat</h4>
-                        <p class="text-slate-600 mt-1">　</p>
-                    </a>
+        <section id="about-hero" class="py-16 md:py-24">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-4xl mx-auto">
+                <div class="flex-shrink-0">
+                    <img src="main-icon.jpg" 
+     alt="プロフィール写真" 
+     class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#99a9d4] shadow-lg object-cover">
+obj
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="flex flex-wrap justify-center md:justify-start items-center gap-x-3">
+                        <h2 class="w-full md:w-auto text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+                            まぼ/泉屋まぼ
+                        </h2>
+                        <span class="inline-block bg-[#e3e8f5] text-[#5c6a92] px-2.5 py-0.5 rounded-full text-sm font-semibold mt-2 md:mt-0">she/her</span>
+                    </div>
+                    <p class="mt-1 text-lg text-slate-600">Mabo/Mabo Izumiya</p>
+                    <p class="mt-4 text-lg md:text-xl text-slate-600">
+                        バーチャルとリアルを行き来する越境型クリエイター
+                    </p>
+                    <div class="max-w-xl mt-6">
+                        <p class="text-slate-700 leading-relaxed">
+                            2023年4月よりニコニコを拠点に活動開始。<br>
+                            2024年から泉屋まぼ名義でVRChat・cluster・バーチャルキャスト等のメタバースにも活動範囲を拡大。<br>
+                            現在は歌ってみたの投稿・生配信・SmileSやCLUSTARSの関連企画など参加しながら<br>
+                            バーチャルとリアルの両方面で活動中。
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         
-        <!-- リンク集セクション (Links) -->
+        <section id="about-me" class="py-16 md:py-20">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-slate-900 mb-4 text-left">About me</h3>
+                <div class="w-24 h-1 bg-[#99a9d4] mb-12"></div>
+                
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white text-slate-700 px-4 py-2 rounded-full shadow-md text-base font-medium">
+                        <a href="https://site.nicovideo.jp/smiles/" target="_blank" rel="noopener noreferrer" class="text-[#99a9d4] hover:underline font-semibold">ニコニコサポーターズSmileS</a>サポーター No.180
+                    </span>
+                    <span class="bg-white text-slate-700 px-4 py-2 rounded-full shadow-md text-base font-medium">CLUSTARS学園 5期</span>
+                    <span class="bg-white text-slate-700 px-4 py-2 rounded-full shadow-md text-base font-medium">放課後レクリエーション部 64期</span>
+                    <span class="bg-white text-slate-700 px-4 py-2 rounded-full shadow-md text-base font-medium">私立VRC学園 18期(18-6)</span>
+                    <span class="bg-white text-slate-700 px-4 py-2 rounded-full shadow-md text-base font-medium">VRCスクール 14期</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="py-16 md:py-20">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-slate-900 mb-4 text-left">主な活動実績</h3>
+                <div class="w-24 h-1 bg-[#99a9d4] mb-12"></div>
+                
+                <div class="space-y-6 text-left">
+                    <a href="#" class="block bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <h4 class="text-xl font-semibold text-slate-800">テレビ朝日×cluster「メタメタ大作戦2025」</h4>
+                        <p class="text-slate-600 mt-1">盛り上げ隊として選出</p>
+                    </a>
+                    <a href="https://x.com/Mdoufu_VRC/status/1920317598836592735" class="block bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <h4 class="text-xl font-semibold text-slate-800">みみのこ非公式大会「みみのこぷらす杯」</h4>
+                        <p class="text-slate-600 mt-1">イベント主催・企画・運営</p>
+                    </a>
+                    <a href="https://x.com/6pongimetaRADIO/status/1900502175807091096" class="block bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+                        <h4 class="text-xl font-semibold text-slate-800">JR西日本×テレビ朝日×cluster「バーチャル広島駅開幕祭」</h4>
+                        <p class="text-slate-600 mt-1">応援団として選出</p>
+                    </a>
+                </div>
+
+                <div class="text-right mt-12">
+                    <a href="works.html" class="inline-block bg-[#99a9d4] text-white font-bold py-3 px-8 rounded-full hover:bg-[#8a9dcb] transition-colors">
+                        もっとみる
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        
         <section id="links" class="py-16 md:py-20">
              <div class="max-w-4xl mx-auto">
                 <h3 class="text-3xl font-bold text-slate-900 mb-4 text-left">リンク</h3>
@@ -196,10 +218,9 @@
 
     </main>
 
-    <!-- フッター -->
     <footer class="bg-[#99a9d4]">
         <div class="container mx-auto px-6 py-6 text-center text-white">
-            <p>&copy; 2024 まぼ/泉屋まぼ. All Rights Reserved.</p>
+            <p>© 2024 まぼ/泉屋まぼ. All Rights Reserved.</p>
         </div>
     </footer>
 

@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ｜まぼ/泉屋まぼ</title>
+    <title>まぼ/泉屋まぼ</title>
+    <!-- Tailwind CSSを読み込み -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) を読み込み -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -17,16 +19,19 @@
 </head>
 <body class="bg-slate-100 text-slate-800">
 
+    <!-- メインコンテンツ -->
     <main class="container mx-auto px-6 py-12">
 
+        <!-- 自己紹介・ヒーローセクション -->
         <section id="about-hero" class="py-16 md:py-24">
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-4xl mx-auto">
+                <!-- Image -->
                 <div class="flex-shrink-0">
-                    <img src="main-icon.jpg" 
-     alt="プロフィール写真" 
-     class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#99a9d4] shadow-lg object-cover">
-obj
+                    <img src="https://placehold.co/150x150/f1f5f9/99a9d4?text=Profile" 
+                         alt="プロフィール写真" 
+                         class="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-[#99a9d4] shadow-lg object-cover">
                 </div>
+                <!-- Text Content -->
                 <div class="text-center md:text-left">
                     <div class="flex flex-wrap justify-center md:justify-start items-center gap-x-3">
                         <h2 class="w-full md:w-auto text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
@@ -50,6 +55,7 @@ obj
             </div>
         </section>
         
+        <!-- About Me セクション -->
         <section id="about-me" class="py-16 md:py-20">
             <div class="max-w-4xl mx-auto">
                 <h3 class="text-3xl font-bold text-slate-900 mb-4 text-left">About me</h3>
@@ -67,6 +73,7 @@ obj
             </div>
         </section>
 
+        <!-- 活動実績セクション (Works) -->
         <section id="works" class="py-16 md:py-20">
             <div class="max-w-4xl mx-auto">
                 <h3 class="text-3xl font-bold text-slate-900 mb-4 text-left">主な活動実績</h3>
@@ -87,6 +94,7 @@ obj
                     </a>
                 </div>
 
+                <!-- もっとみるボタン -->
                 <div class="text-right mt-12">
                     <a href="works.html" class="inline-block bg-[#99a9d4] text-white font-bold py-3 px-8 rounded-full hover:bg-[#8a9dcb] transition-colors">
                         もっとみる
@@ -96,6 +104,7 @@ obj
             </div>
         </section>
         
+        <!-- リンク集セクション (Links) -->
         <section id="links" class="py-16 md:py-20">
              <div class="max-w-4xl mx-auto">
                 <h3 class="text-3xl font-bold text-slate-900 mb-4 text-left">リンク</h3>
@@ -218,9 +227,10 @@ obj
 
     </main>
 
+    <!-- フッター -->
     <footer class="bg-[#99a9d4]">
         <div class="container mx-auto px-6 py-6 text-center text-white">
-            <p>© 2024 まぼ/泉屋まぼ. All Rights Reserved.</p>
+            <p>© Mabo / Mabo Izumiya All Rights Reserved.</p>
         </div>
     </footer>
 
